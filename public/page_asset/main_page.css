@@ -1,0 +1,124 @@
+
+body {
+    font-family: 'Figtree', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+
+.logo {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #111827;
+}
+
+/* Updated Navigation Styles */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-left: auto; /* Pushes nav to the right */
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    color: #111827;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: rgba(17, 24, 39, 0.7);
+    background-color: #f3f4f6;
+}
+
+/* Responsive Navigation */
+@media (max-width: 640px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    nav {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+/* Hero Section */
+.hero {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #111827;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #4b5563;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.feature-card {
+    padding: 1.5rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.feature-card h3 {
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: #6b7280;
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
